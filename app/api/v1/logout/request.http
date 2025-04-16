@@ -1,0 +1,17 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImVtYWlsIjoiam9obi5kb2VAZXhhbXBsZS5jb20iLCJpYXQiOjE3MzYyMTU1NjEsImV4cCI6MTczNjIxOTE2MX0.vPbgDOjU9QSVDUZMlLtPMADIpbJFl6wDTHC08-nik6c
+
+
+###
+POST http://localhost:3000/api/v1/login
+Content-Type: application/json
+
+{
+  "email": "john.doe@example.com",
+  "password": "securepassword123"
+}
+
+
+###
+POST http://localhost:3000/api/v1/logout
+Authorization: Bearer {{token}}
+Content-Type: application/json

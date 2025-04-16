@@ -1,0 +1,41 @@
+@hostname = localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+
+@sku = 1
+@apiVersion = v1
+
+
+###
+GET http://{{host}}/api/{{apiVersion}}/sample
+
+###
+DELETE http://{{host}}/api/{{apiVersion}}/sample
+
+###
+POST http://{{host}}/api/{{apiVersion}}/sample
+Content-Type: {{contentType}}
+
+{
+  "name": "sample",
+  "description": "sample description"
+}
+
+###
+PUT http://{{host}}/api/{{apiVersion}}/sample
+Content-Type: {{contentType}}
+
+{
+  "name": "sample",
+  "description": "sample description"
+}
+
+###
+PATCH http://{{host}}/api/{{apiVersion}}/sample
+Content-Type: {{contentType}}
+
+{
+  "name": "sample"
+  }
+

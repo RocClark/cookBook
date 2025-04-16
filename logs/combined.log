@@ -1,0 +1,5 @@
+{"level":"info","message":"User successfully logged in: roc.doe9@gmail.com","timestamp":"2025-03-11T16:58:10.300Z"}
+{"level":"info","message":"Failed login attempt - user not found for email: ross@gmail.com","timestamp":"2025-03-16T18:12:40.447Z"}
+{"level":"info","message":"Failed login attempt - user not found for email: john.doe@example.com","timestamp":"2025-03-16T18:14:21.003Z"}
+{"level":"info","message":"User successfully logged in: ross@gmail.com","timestamp":"2025-03-16T18:15:43.696Z"}
+{"level":"info","message":"User successfully logged in: ross@gmail.com","timestamp":"2025-03-24T14:48:56.960Z"}

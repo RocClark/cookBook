@@ -1,0 +1,294 @@
+@hostname = localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@apiVersion = v1
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImVtYWlsIjoiam9obi5kb2VAZXhhbXBsZS5jb20iLCJpYXQiOjE3MzYxMzAzMTcsImV4cCI6MTczNjEzMzkxN30.g8alY6NmrMBl4bu_GX-wwAstepD4TBe810gsLQg_SI4
+
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "email": "john.doe@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "email": "john.doe@example.com2",
+  "password": "securepassword123"
+}
+
+###
+
+GET http://{{host}}/api/{{apiVersion}}/users/
+Content-Type: application/json
+
+###
+GET http://{{host}}/api/{{apiVersion}}/users
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+###
+DELETE http://{{host}}/api/{{apiVersion}}/users/
+
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John1",
+  "last_name": "Doe",
+  "email": "john.doe1@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John2",
+  "last_name": "Doe",
+  "email": "john.doe2@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John3",
+  "last_name": "Doe",
+  "email": "john.doe3@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John4",
+  "last_name": "Doe",
+  "email": "john.doe4@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John5",
+  "last_name": "Doe",
+  "email": "john.doe5@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John6",
+  "last_name": "Doe",
+  "email": "john.doe6@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John7",
+  "last_name": "Doe",
+  "email": "john.doe7@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John8",
+  "last_name": "Doe",
+  "email": "john.doe8@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John9",
+  "last_name": "Doe",
+  "email": "john.doe9@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John10",
+  "last_name": "Doe",
+  "email": "john.doe10@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John11",
+  "last_name": "Doe",
+  "email": "john.doe11@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John12",
+  "last_name": "Doe",
+  "email": "john.doe12@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John13",
+  "last_name": "Doe",
+  "email": "john.doe13@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John14",
+  "last_name": "Doe",
+  "email": "john.doe14@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John15",
+  "last_name": "Doe",
+  "email": "john.doe15@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John16",
+  "last_name": "Doe",
+  "email": "john.doe16@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John17",
+  "last_name": "Doe",
+  "email": "john.doe17@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John18",
+  "last_name": "Doe",
+  "email": "john.doe18@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John19",
+  "last_name": "Doe",
+  "email": "john.doe19@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John20",
+  "last_name": "Doe",
+  "email": "john.doe20@example.com",
+  "password": "password"
+}
+
+###
+
+POST http://{{host}}/api/{{apiVersion}}/users
+Content-Type: application/json
+
+{
+  "first_name": "John21",
+  "last_name": "Doe",
+  "email": "john.doe21@example.com",
+  "password": "password"
+}

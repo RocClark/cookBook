@@ -1,0 +1,28 @@
+@hostname = localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@apiVersion = v1
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImVtYWlsIjoiam9obi5kb2VAZXhhbXBsZS5jb20iLCJpYXQiOjE3MzYxMjU2ODIsImV4cCI6MTczNjEyOTI4Mn0._uOHkVZH8IpCdEgc1g8ISS-Sht1cpaBwycgXWCVaKdQ
+
+@invalidToken = cyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImVtYWlsIjoiam9obi5kb2VAZXhhbXBsZS5jb20iLCJpYXQiOjE3MzYxMjU2ODIsImV4cCI6MTczNjEyOTI4Mn0._uOHkVZH8IpCdEgc1g8ISS-Sht1cpaBwycgXWCVaKdQ
+
+
+###
+# Access protected endpoint with a valid token
+###
+# Access protected endpoint with a valid token
+GET http://{{host}}/api/{{apiVersion}}/protected
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+
+###
+# Access protected endpoint with an invalid token
+GET http://{{host}}/api/{{apiVersion}}/protected
+Authorization: Bearer {{invalidToken}}
+Content-Type: application/json
+
+###
+# Access protected endpoint without a token
+GET http://{{host}}/api/{{apiVersion}}/protected
+Content-Type: application/json

@@ -1,0 +1,46 @@
+@hostname = localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@userId = 1
+@apiVersion = v1
+
+###
+GET http://{{host}}/api/{{apiVersion}}/users/{{userId}}
+Content-Type: application/json
+
+###
+PUT http://{{host}}/api/{{apiVersion}}/users/{{userId}}
+Content-Type: application/json
+
+{
+  "first_name": "Johnx",
+  "last_name": "Doex",
+  "email": "john.doe@example.comx"
+}
+
+###
+PATCH http://{{host}}/api/{{apiVersion}}/users/{{userId}}
+Content-Type: application/json
+
+{
+  "first_name": "John"
+}
+
+###
+PATCH http://{{host}}/api/{{apiVersion}}/users/{{userId}}
+Content-Type: application/json
+
+{
+  "last_name": "Doe"
+}
+
+###
+PATCH http://{{host}}/api/{{apiVersion}}/users/{{userId}}
+Content-Type: application/json
+
+{
+  "email": "john.doe@example.com"
+}
+
+###
+DELETE http://{{host}}/api/{{apiVersion}}/users/{{userId}}
